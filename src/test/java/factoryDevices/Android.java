@@ -19,6 +19,7 @@ public class Android implements IDevice{
         capabilities.setCapability("appium:appActivity","com.android.deskclock.DeskClock");
         capabilities.setCapability("appium:platformName","Android");
         capabilities.setCapability("appium:automationName","uiautomator2");
+
         AppiumDriver driver = null;
         try {
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), capabilities);
